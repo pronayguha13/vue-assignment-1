@@ -1,7 +1,7 @@
 {
   "students": [
     {
-      "ID": "1",
+      "id": "1",
       "Name": "Senpai",
       "Gender": "1",
       "Class": "32",
@@ -23,7 +23,7 @@
       "Info": "An average student. \n \n Average grades, average looks, average life... \n \n I'm not sure what you see in him."
     },
     {
-      "ID": "2",
+      "id": "2",
       "Name": "Yui Rio",
       "Gender": "0",
       "Class": "11",
@@ -45,7 +45,7 @@
       "Info": ""
     },
     {
-      "ID": "3",
+      "id": "3",
       "Name": "Yuna Hina",
       "Gender": "0",
       "Class": "12",
@@ -67,7 +67,7 @@
       "Info": ""
     },
     {
-      "ID": "4",
+      "id": "4",
       "Name": "Koharu Hinata",
       "Gender": "0",
       "Class": "21",
@@ -89,7 +89,7 @@
       "Info": ""
     },
     {
-      "ID": "5",
+      "id": "5",
       "Name": "Mei Mio",
       "Gender": "0",
       "Class": "22",
@@ -111,7 +111,7 @@
       "Info": ""
     },
     {
-      "ID": "6",
+      "id": "6",
       "Name": "Saki Miyu",
       "Gender": "0",
       "Class": "31",
@@ -133,7 +133,7 @@
       "Info": "Kokona Haruka's best friend and closest confidant. Kokona is likely to discuss personal matters with this girl."
     },
     {
-      "ID": "7",
+      "id": "7",
       "Name": "Kokona Haruka",
       "Gender": "0",
       "Class": "32",
@@ -155,7 +155,7 @@
       "Info": ""
     },
     {
-      "ID": "8",
+      "id": "8",
       "Name": "Haruto Yuto",
       "Gender": "1",
       "Class": "11",
@@ -177,7 +177,7 @@
       "Info": ""
     },
     {
-      "ID": "9",
+      "id": "9",
       "Name": "Sota Yuki",
       "Gender": "1",
       "Class": "12",
@@ -199,7 +199,7 @@
       "Info": ""
     },
     {
-      "ID": "10",
+      "id": "10",
       "Name": "Hayato Haruki",
       "Gender": "1",
       "Class": "21",
@@ -221,7 +221,7 @@
       "Info": ""
     },
     {
-      "ID": "11",
+      "id": "11",
       "Name": "Ryusei Koki",
       "Gender": "1",
       "Class": "22",
@@ -243,7 +243,7 @@
       "Info": ""
     },
     {
-      "ID": "12",
+      "id": "12",
       "Name": "Sora Sosuke",
       "Gender": "1",
       "Class": "31",
@@ -265,7 +265,7 @@
       "Info": ""
     },
     {
-      "ID": "13",
+      "id": "13",
       "Name": "Riku Soma",
       "Gender": "1",
       "Class": "32",
@@ -287,7 +287,7 @@
       "Info": "Comes from a rich family. He tries to hide this fact from others, but his affluent origins are very obvious because of his unusual way of speaking."
     },
     {
-      "ID": "14",
+      "id": "14",
       "Name": "Pippi Osu",
       "Gender": "0",
       "Class": "11",
@@ -309,7 +309,7 @@
       "Info": "Extremely unlikely to witness murder unless it takes place in the computer lab."
     },
     {
-      "ID": "15",
+      "id": "15",
       "Name": "Ryuto Ippongo",
       "Gender": "1",
       "Class": "12",
@@ -331,7 +331,7 @@
       "Info": "Secretly has a crush on Pippi Osu. Neither of them realize that they both share feelings for each other. \n \n Swears to his parents that he spends all of his free time studying."
     },
     {
-      "ID": "16",
+      "id": "16",
       "Name": "Midori Gurin",
       "Gender": "0",
       "Class": "31",
@@ -353,7 +353,7 @@
       "Info": "Known for irritating her classmates and teachers by constantly asking foolish questions."
     },
     {
-      "ID": "17",
+      "id": "17",
       "Name": "Sakyu Basu",
       "Gender": "0",
       "Class": "21",
@@ -375,7 +375,7 @@
       "Info": "Wears contact lenses. \n \n Enjoys spending time with her younger sister. \n \n Rumored to be a succubus disguised as a high school student...but only a fool would believe something like that."
     },
     {
-      "ID": "18",
+      "id": "18",
       "Name": "Inkyu Basu",
       "Gender": "0",
       "Class": "22",
@@ -397,7 +397,7 @@
       "Info": "Wears contact lenses. \n \n Enjoys spending time with her older sister. \n \n Rumored to be a vampire disguised as a high school student...but only a fool would believe something like that."
     },
     {
-      "ID": "19",
+      "id": "19",
       "Name": "Kuu Dere",
       "Gender": "0",
       "Class": "32",
@@ -419,7 +419,7 @@
       "Info": "The school librarian. \n \n Strongly prefers solitude. \n \n Very rarely expresses emotions."
     },
     {
-      "ID": "20",
+      "id": "20",
       "Name": "Mai Waifu",
       "Gender": "0",
       "Class": "31",
@@ -441,7 +441,7 @@
       "Info": "Described as 'kawaii' 'moe' and 'deredere' by her admirers. \n \n Has sworn her heart to an independent game developer living overseas. \n \n Prefers to spend her time alone, daydreaming about her loved one."
     },
     {
-      "ID": "21",
+      "id": "21",
       "Name": "Budo Masuta",
       "Gender": "1",
       "Class": "32",
@@ -463,7 +463,7 @@
       "Info": "President of the Martial Arts Club. Inherited the club after defeating the previous president. \n \n Seems to be incapable of turning down a challenge. \n \n Always gung ho and enthusiastic. Sometimes a bit overzealous, especially about martial arts."
     },
     {
-      "ID": "22",
+      "id": "22",
       "Name": "Sho Kunin",
       "Gender": "1",
       "Class": "22",
@@ -485,7 +485,7 @@
       "Info": "Journeyman-level disciple of Budo Masuta."
     },
     {
-      "ID": "23",
+      "id": "23",
       "Name": "Juku Ren",
       "Gender": "1",
       "Class": "12",
@@ -507,7 +507,7 @@
       "Info": "Apprentice-level disciple of Budo Masuta."
     },
     {
-      "ID": "24",
+      "id": "24",
       "Name": "Mina Rai",
       "Gender": "0",
       "Class": "21",
@@ -529,7 +529,7 @@
       "Info": "Journeyman-level disciple of Budo Masuta."
     },
     {
-      "ID": "25",
+      "id": "25",
       "Name": "Shima Shita",
       "Gender": "0",
       "Class": "11",
@@ -551,7 +551,7 @@
       "Info": "Apprentice-level disciple of Budo Masuta."
     },
     {
-      "ID": "26",
+      "id": "26",
       "Name": "Oka Ruto",
       "Gender": "0",
       "Class": "32",
@@ -573,7 +573,7 @@
       "Info": "Founder and President of the Occult Club. \n \n Seems to have absolutely no interest in anything that is not paranormal. \n \n Stalks the Basu sisters daily in a futile search for evidence that they are supernatural beings."
     },
     {
-      "ID": "27",
+      "id": "27",
       "Name": "Shin Higaku",
       "Gender": "1",
       "Class": "31",
@@ -595,7 +595,7 @@
       "Info": "Trusted by Oka Ruto to operate the Occult Club when she is not present."
     },
     {
-      "ID": "28",
+      "id": "28",
       "Name": "Supana Churu",
       "Gender": "0",
       "Class": "22",
@@ -617,7 +617,7 @@
       "Info": "Claims to be wearing a medical eyepatch to correct a problem with her vision. \n \n Refuses to provide details regarding her eye condition, leading to rumors that she is lying about the reason she wears an eyepatch."
     },
     {
-      "ID": "29",
+      "id": "29",
       "Name": "Chojo Tekina",
       "Gender": "1",
       "Class": "21",
@@ -639,7 +639,7 @@
       "Info": "No student has ever seen the right side of his face. \n \n Some students suspect that he is using his hair to hide an unsightly scar or missing eye."
     },
     {
-      "ID": "30",
+      "id": "30",
       "Name": "Kokuma Jutsu",
       "Gender": "0",
       "Class": "12",
@@ -661,7 +661,7 @@
       "Info": "Claims that the bandages on her face are the result of being attacked by a wild animal shortly before the school year began. \n \n There are rumors that the true reason she wears bandages is because she is regularly beaten by a family member, and was blinded in one eye during a domestic dispute."
     },
     {
-      "ID": "31",
+      "id": "31",
       "Name": "Daku Atsu",
       "Gender": "1",
       "Class": "11",
@@ -683,7 +683,7 @@
       "Info": "One of the lenses of his glasses is completely opaque. No student has ever seen his right eye. \n \n Some students suspect that he only has one eye, and prefers to wear an opaque lense over that eye rather than an eyepatch."
     },
     {
-      "ID": "32",
+      "id": "32",
       "Name": "Horuda Puresu",
       "Gender": "0",
       "Class": "11",
@@ -705,7 +705,7 @@
       "Info": "A shy and timid girl. \n \n She is usually targeted for bullying. \n \n A temporary placeholder student. Don't get too attached to her."
     },
     {
-      "ID": "33",
+      "id": "33",
       "Name": "Reserved",
       "Gender": "0",
       "Class": "21",
@@ -727,7 +727,7 @@
       "Info": ""
     },
     {
-      "ID": "34",
+      "id": "34",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -749,7 +749,7 @@
       "Info": ""
     },
     {
-      "ID": "35",
+      "id": "35",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -771,7 +771,7 @@
       "Info": ""
     },
     {
-      "ID": "36",
+      "id": "36",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -793,7 +793,7 @@
       "Info": ""
     },
     {
-      "ID": "37",
+      "id": "37",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -815,7 +815,7 @@
       "Info": ""
     },
     {
-      "ID": "38",
+      "id": "38",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -837,7 +837,7 @@
       "Info": ""
     },
     {
-      "ID": "39",
+      "id": "39",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -859,7 +859,7 @@
       "Info": ""
     },
     {
-      "ID": "40",
+      "id": "40",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -881,7 +881,7 @@
       "Info": ""
     },
     {
-      "ID": "41",
+      "id": "41",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -903,7 +903,7 @@
       "Info": ""
     },
     {
-      "ID": "42",
+      "id": "42",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -925,7 +925,7 @@
       "Info": ""
     },
     {
-      "ID": "43",
+      "id": "43",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -947,7 +947,7 @@
       "Info": ""
     },
     {
-      "ID": "44",
+      "id": "44",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -969,7 +969,7 @@
       "Info": ""
     },
     {
-      "ID": "45",
+      "id": "45",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -991,7 +991,7 @@
       "Info": ""
     },
     {
-      "ID": "46",
+      "id": "46",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1013,7 +1013,7 @@
       "Info": ""
     },
     {
-      "ID": "47",
+      "id": "47",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1035,7 +1035,7 @@
       "Info": ""
     },
     {
-      "ID": "48",
+      "id": "48",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1057,7 +1057,7 @@
       "Info": ""
     },
     {
-      "ID": "49",
+      "id": "49",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1079,7 +1079,7 @@
       "Info": ""
     },
     {
-      "ID": "50",
+      "id": "50",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1101,7 +1101,7 @@
       "Info": ""
     },
     {
-      "ID": "51",
+      "id": "51",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1123,7 +1123,7 @@
       "Info": ""
     },
     {
-      "ID": "52",
+      "id": "52",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1145,7 +1145,7 @@
       "Info": ""
     },
     {
-      "ID": "53",
+      "id": "53",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1167,7 +1167,7 @@
       "Info": ""
     },
     {
-      "ID": "54",
+      "id": "54",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1189,7 +1189,7 @@
       "Info": ""
     },
     {
-      "ID": "55",
+      "id": "55",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1211,7 +1211,7 @@
       "Info": ""
     },
     {
-      "ID": "56",
+      "id": "56",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1233,7 +1233,7 @@
       "Info": ""
     },
     {
-      "ID": "57",
+      "id": "57",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1255,7 +1255,7 @@
       "Info": ""
     },
     {
-      "ID": "58",
+      "id": "58",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1277,7 +1277,7 @@
       "Info": ""
     },
     {
-      "ID": "59",
+      "id": "59",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1299,7 +1299,7 @@
       "Info": ""
     },
     {
-      "ID": "60",
+      "id": "60",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1321,7 +1321,7 @@
       "Info": ""
     },
     {
-      "ID": "61",
+      "id": "61",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1343,7 +1343,7 @@
       "Info": ""
     },
     {
-      "ID": "62",
+      "id": "62",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1365,7 +1365,7 @@
       "Info": ""
     },
     {
-      "ID": "63",
+      "id": "63",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1387,7 +1387,7 @@
       "Info": ""
     },
     {
-      "ID": "64",
+      "id": "64",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1409,7 +1409,7 @@
       "Info": ""
     },
     {
-      "ID": "65",
+      "id": "65",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1431,7 +1431,7 @@
       "Info": ""
     },
     {
-      "ID": "66",
+      "id": "66",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1453,7 +1453,7 @@
       "Info": ""
     },
     {
-      "ID": "67",
+      "id": "67",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1475,7 +1475,7 @@
       "Info": ""
     },
     {
-      "ID": "68",
+      "id": "68",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1497,7 +1497,7 @@
       "Info": ""
     },
     {
-      "ID": "69",
+      "id": "69",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1519,7 +1519,7 @@
       "Info": ""
     },
     {
-      "ID": "70",
+      "id": "70",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1541,7 +1541,7 @@
       "Info": ""
     },
     {
-      "ID": "71",
+      "id": "71",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1563,7 +1563,7 @@
       "Info": ""
     },
     {
-      "ID": "72",
+      "id": "72",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1585,7 +1585,7 @@
       "Info": ""
     },
     {
-      "ID": "73",
+      "id": "73",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1607,7 +1607,7 @@
       "Info": ""
     },
     {
-      "ID": "74",
+      "id": "74",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1629,7 +1629,7 @@
       "Info": ""
     },
     {
-      "ID": "75",
+      "id": "75",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1651,7 +1651,7 @@
       "Info": ""
     },
     {
-      "ID": "76",
+      "id": "76",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1673,7 +1673,7 @@
       "Info": ""
     },
     {
-      "ID": "77",
+      "id": "77",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1695,7 +1695,7 @@
       "Info": ""
     },
     {
-      "ID": "78",
+      "id": "78",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1717,7 +1717,7 @@
       "Info": ""
     },
     {
-      "ID": "79",
+      "id": "79",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1739,7 +1739,7 @@
       "Info": ""
     },
     {
-      "ID": "80",
+      "id": "80",
       "Name": "Unknown",
       "Gender": "0",
       "Class": "0",
@@ -1761,7 +1761,7 @@
       "Info": ""
     },
     {
-      "ID": "81",
+      "id": "81",
       "Name": "Musume Ronshaku",
       "Gender": "0",
       "Class": "32",
@@ -1783,7 +1783,7 @@
       "Info": "A flashy trend-setter who loves to gossip and doesn't take school too seriously. \n \n She is spoiled rotten by her doting father, who buys his daughter anything she wants. \n \n Her father runs a loan agency."
     },
     {
-      "ID": "82",
+      "id": "82",
       "Name": "Kashiko Murasaki",
       "Gender": "0",
       "Class": "31",
@@ -1805,7 +1805,7 @@
       "Info": "Spends most of her time texting on her phone. \n \n Pretends to be a sweet girl, but in private, her personality is quite nasty. \n \n Secretly, her favorite activity is gossipping and spreading rumors."
     },
     {
-      "ID": "83",
+      "id": "83",
       "Name": "Hana Daidaiyama",
       "Gender": "0",
       "Class": "22",
@@ -1827,7 +1827,7 @@
       "Info": "Spends most of her time playing games on her phone. \n \n Pretends to be pure and innocent, but in private, she can be extremely vulgar. \n \n Secretly, her favorite activity is looking for dirt in peoples' pasts."
     },
     {
-      "ID": "84",
+      "id": "84",
       "Name": "Kokoro Momoiro",
       "Gender": "0",
       "Class": "21",
@@ -1849,7 +1849,7 @@
       "Info": "Spends most of her time taking selfies with her phone. \n \n Pretends to oppose bullying, but in private, she harasses the people she dislikes. \n \n Secretly, her favorite activity is shaming and ridiculing other people."
     },
     {
-      "ID": "85",
+      "id": "85",
       "Name": "Hoshiko Mizudori",
       "Gender": "0",
       "Class": "12",
@@ -1871,7 +1871,7 @@
       "Info": "Spends most of her time browsing the Internet on her phone. \n \n Pretends to be a positive person, but in private, only says negative things about others. \n \n Secretly, her favorite activity is operating a hate blog on the Internet."
     },
     {
-      "ID": "86",
+      "id": "86",
       "Name": "Kuroko Kamenaga",
       "Gender": "0",
       "Class": "32",
@@ -1893,7 +1893,7 @@
       "Info": "Last year's student council president, and this year's vice president. Currently substituting for the absent president. Known for being formal at all times."
     },
     {
-      "ID": "87",
+      "id": "87",
       "Name": "Shiromi Torayoshi",
       "Gender": "0",
       "Class": "22",
@@ -1915,7 +1915,7 @@
       "Info": "Treasurer of the student council. A mysterious &amp; enigmatic young woman. Known to be calm &amp; relaxed at all times. Some students find her unsettling."
     },
     {
-      "ID": "88",
+      "id": "88",
       "Name": "Akane Toriyasu",
       "Gender": "0",
       "Class": "31",
@@ -1937,7 +1937,7 @@
       "Info": "Secretary of the student council. Seems ditzy and airheaded at first glance, but has never failed in her duties. She has a very large number of male admirers."
     },
     {
-      "ID": "89",
+      "id": "89",
       "Name": "Aoi Ryugoku",
       "Gender": "0",
       "Class": "21",
@@ -1959,7 +1959,7 @@
       "Info": "Enforcer of the student council. Charged with the task of maintaining peace throughout the school. Often uses physical intimidation to enforce rules."
     },
     {
-      "ID": "90",
+      "id": "90",
       "Name": "Nasu Kankoshi",
       "Gender": "0",
       "Class": "1",
@@ -1981,7 +1981,7 @@
       "Info": ""
     },
     {
-      "ID": "91",
+      "id": "91",
       "Name": "Reina Nana",
       "Gender": "0",
       "Class": "11",
@@ -2003,7 +2003,7 @@
       "Info": ""
     },
     {
-      "ID": "92",
+      "id": "92",
       "Name": "Natsuki Anna",
       "Gender": "0",
       "Class": "12",
@@ -2025,7 +2025,7 @@
       "Info": ""
     },
     {
-      "ID": "93",
+      "id": "93",
       "Name": "Rino Fuka",
       "Gender": "0",
       "Class": "21",
@@ -2047,7 +2047,7 @@
       "Info": ""
     },
     {
-      "ID": "94",
+      "id": "94",
       "Name": "Shiori Risa",
       "Gender": "0",
       "Class": "22",
@@ -2069,7 +2069,7 @@
       "Info": ""
     },
     {
-      "ID": "95",
+      "id": "95",
       "Name": "Karin Hana",
       "Gender": "0",
       "Class": "31",
@@ -2091,7 +2091,7 @@
       "Info": ""
     },
     {
-      "ID": "96",
+      "id": "96",
       "Name": "Kaho Kanon",
       "Gender": "0",
       "Class": "32",
@@ -2113,7 +2113,7 @@
       "Info": ""
     },
     {
-      "ID": "97",
+      "id": "97",
       "Name": "Kyoshi Taiso",
       "Gender": "0",
       "Class": "0",
@@ -2135,7 +2135,7 @@
       "Info": ""
     },
     {
-      "ID": "98",
+      "id": "98",
       "Name": "Genka Kunahito",
       "Gender": "0",
       "Class": "2",
@@ -2157,7 +2157,7 @@
       "Info": "The school's guidance counselor. \n \n Misbehaving students are sent to her office. \n \n To expel a student, you must catch that student misbehaving and report them to her."
     },
     {
-      "ID": "99",
+      "id": "99",
       "Name": "Kocho Shuyona",
       "Gender": "1",
       "Class": "3",
@@ -2179,7 +2179,7 @@
       "Info": "The school's headmaster. \n \n An extremely reclusive person, he rarely leaves his office or addresses the student body in person. \n \n The center of numerous unsavory rumors, although none have been proven."
     },
     {
-      "ID": "100",
+      "id": "100",
       "Name": "Info-chan",
       "Gender": "0",
       "Class": "0",
