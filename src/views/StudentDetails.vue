@@ -5,12 +5,12 @@
       studentDetails && Object.keys(studentDetails).length && !isLoading
     "
   >
-    <Header />
+    <Header @toggleModal="toggleModalStatus" />
     <div class="container">
       <div class="name">
         <h3>{{ studentDetails.Name }} - {{ gender }}</h3>
       </div>
-      <p>{{ studentDetails?.Info }}</p>
+      <p>{{ info }}</p>
     </div>
   </div>
   <div
@@ -20,6 +20,7 @@
   >
     No Data Found...
   </div>
+  <EditModal v-if="showModal" @toggleModal="toggleModalStatus" />
 </template>
 
 <script>
@@ -29,15 +30,18 @@ import { useRouter } from "vue-router";
 import { GenderConfig } from "@/config/GenderConfig";
 
 import Header from "@/components/Header";
+import EditModal from "@/components/EditModal";
 
 export default {
   components: {
     Header,
+    EditModal,
   },
   setup() {
     const router = useRouter();
     const studentDetails = ref(null);
     const isLoading = ref(false);
+    const showModal = ref(false);
 
     const id = router.currentRoute?.value?.params?.id;
 
@@ -55,6 +59,7 @@ export default {
         isLoading.value = false;
       }
     })();
+
     const gender = computed(() => {
       let genderData = null;
 
@@ -70,7 +75,29 @@ export default {
       return genderData;
     });
 
-    return { studentDetails, isLoading, gender };
+    const info = computed(() => {
+      if (
+        studentDetails?.value &&
+        studentDetails?.value?.Info &&
+        studentDetails?.value?.Info?.length
+      )
+        return studentDetails?.value?.Info;
+      else return "No Details Found";
+    });
+
+    const toggleModalStatus = () => {
+      console.log("Inside studentDetails toggleModal");
+      showModal.value = !showModal.value;
+    };
+
+    return {
+      studentDetails,
+      isLoading,
+      gender,
+      info,
+      showModal,
+      toggleModalStatus,
+    };
   },
 };
 </script>

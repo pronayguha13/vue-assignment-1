@@ -1,12 +1,23 @@
 <template>
   <div class="wrapper">
-    <button class="controller-button delete-button">Delete</button
-    ><button class="controller-button edit-button">Edit</button>
+    <button class="controller-button delete-button">Delete</button>
+    <button class="controller-button edit-button" @click="toggleModalStatus">
+      Edit
+    </button>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  setup(_, { emit }) {
+    const toggleModalStatus = () => {
+      console.log("toggle Modal inside header");
+      emit("toggleModal");
+    };
+
+    return { toggleModalStatus };
+  },
+};
 </script>
 
 <style scoped>
