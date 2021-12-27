@@ -17,6 +17,7 @@
         </div>
       </div>
     </ol>
+    <FloatingButton />
   </div>
   <div v-else-if="!students.length && !isLoading">No Student found....</div>
 </template>
@@ -25,8 +26,13 @@
 import { ref } from "vue";
 import axios from "axios";
 import { useRouter } from "vue-router";
+import FloatingButton from "@/components/FloatingButton";
+
 export default {
   name: "StudentList",
+  components: {
+    FloatingButton,
+  },
   setup() {
     const router = useRouter();
     const students = ref([]);
