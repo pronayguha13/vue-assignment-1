@@ -17,7 +17,8 @@
         </div>
       </div>
     </ol>
-    <FloatingButton />
+    <FloatingButton @add="addStudentDetails" />
+    <AddModal v-if="isAddModalOpen" />
   </div>
   <div v-else-if="!students.length && !isLoading">No Student found....</div>
 </template>
@@ -27,16 +28,20 @@ import { ref } from "vue";
 import axios from "axios";
 import { useRouter } from "vue-router";
 import FloatingButton from "@/components/FloatingButton";
+import AddModal from "@/components/AddModal";
 
 export default {
   name: "StudentList",
   components: {
     FloatingButton,
+    AddModal,
   },
+
   setup() {
     const router = useRouter();
     const students = ref([]);
     const isLoading = ref(false);
+    const isAddModalOpen = ref(false);
 
     const fetchStudents = async () => {
       try {
@@ -50,6 +55,7 @@ export default {
         isLoading.value = false;
       }
     };
+
     fetchStudents();
 
     const deleteStudent = async (id) => {
@@ -67,11 +73,23 @@ export default {
         }
     };
 
+    const addStudentDetails = () => {
+      console.log("Add button clicked....");
+      isAddModalOpen.value = true;
+    };
+
     function viewStudentDetails(id) {
       router.push(`/students/${id}`);
     }
 
-    return { students, isLoading, deleteStudent, viewStudentDetails };
+    return {
+      students,
+      isLoading,
+      isAddModalOpen,
+      deleteStudent,
+      viewStudentDetails,
+      addStudentDetails,
+    };
   },
 };
 </script>

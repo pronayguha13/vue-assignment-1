@@ -6,12 +6,14 @@
 
 <script>
 import addIcon from "../assets/add.svg";
+
 export default {
-  setup() {
+  setup(_, { emit }) {
     const addNewStudent = () => {
       const newStudentDetails = {};
-      console.log("Add button clicked");
+      emit("add");
     };
+
     return {
       addIcon,
       addNewStudent,
