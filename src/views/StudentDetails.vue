@@ -5,7 +5,11 @@
       studentDetails && Object.keys(studentDetails).length && !isLoading
     "
   >
-    <Header @toggleModal="toggleModalStatus" />
+    <Header
+      @toggleModal="toggleModalStatus"
+      @delete="(id) => deleteStudentData(id)"
+    />
+
     <div class="container">
       <div class="name">
         <h3>{{ studentDetails.Name }} - {{ gender }}</h3>
@@ -20,12 +24,17 @@
   >
     No Data Found...
   </div>
-  <EditModal v-if="showModal" @toggleModal="toggleModalStatus" />
+  <EditModal
+    v-if="showModal"
+    :studentData="studentDetails"
+    @toggleModal="toggleModalStatus"
+    @changeData="(newData) => changeStudentData(newData)"
+  />
 </template>
 
 <script>
 import axios from "axios";
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
 import { useRouter } from "vue-router";
 import { GenderConfig } from "@/config/GenderConfig";
 
@@ -86,8 +95,34 @@ export default {
     });
 
     const toggleModalStatus = () => {
-      console.log("Inside studentDetails toggleModal");
       showModal.value = !showModal.value;
+    };
+
+    const changeStudentData = async (newData) => {
+      try {
+        isLoading.value = true;
+        const response = await axios.put(
+          "http://localhost:3000/students/" + id,
+          newData
+        );
+
+        studentDetails.value = response.data;
+      } catch (error) {
+        console.log(
+          "🚀 ~ file: StudentDetails.vue ~ line 106 ~ changeStudentData ~ error",
+          error
+        );
+      } finally {
+        isLoading.value = false;
+      }
+    };
+
+    const deleteStudentData = async (id) => {
+      const response = await axios.delete(
+        "http://localhost:3000/students/" + id
+      );
+
+      router.push("/");
     };
 
     return {
@@ -97,6 +132,8 @@ export default {
       info,
       showModal,
       toggleModalStatus,
+      changeStudentData,
+      deleteStudentData,
     };
   },
 };

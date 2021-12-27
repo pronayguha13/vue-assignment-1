@@ -1,6 +1,8 @@
 <template>
   <div class="wrapper">
-    <button class="controller-button delete-button">Delete</button>
+    <button class="controller-button delete-button" @click="deleteData">
+      Delete
+    </button>
     <button class="controller-button edit-button" @click="toggleModalStatus">
       Edit
     </button>
@@ -8,14 +10,22 @@
 </template>
 
 <script>
+import { useRouter } from "vue-router";
 export default {
   setup(_, { emit }) {
+    const router = useRouter();
+
     const toggleModalStatus = () => {
-      console.log("toggle Modal inside header");
       emit("toggleModal");
     };
 
-    return { toggleModalStatus };
+    const deleteData = () => {
+      let response = confirm("Do you really want to delete the student");
+
+      if (response) emit("delete", router.currentRoute.value.params.id);
+    };
+
+    return { toggleModalStatus, deleteData };
   },
 };
 </script>

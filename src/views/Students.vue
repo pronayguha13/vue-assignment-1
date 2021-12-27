@@ -29,10 +29,10 @@ export default {
   name: "StudentList",
   setup() {
     const router = useRouter();
-    console.log("🚀 ~ file: Students.vue ~ line 32 ~ setup ~ router", router);
     const students = ref([]);
     const isLoading = ref(false);
-    (async () => {
+
+    const fetchStudents = async () => {
       try {
         isLoading.value = true;
         const response = await axios.get("http://localhost:3000/students");
@@ -43,17 +43,23 @@ export default {
       } finally {
         isLoading.value = false;
       }
-    })();
+    };
+    fetchStudents();
 
-    function deleteStudent(id) {
-      console.log("🚀 ~ file: Students.vue ~ line 36 ~ deleteStudent ~ id", id);
-
-      let filteredStudents = students.value.filter(
-        (student) => student.id !== id
-      );
-
-      students.value = filteredStudents;
-    }
+    const deleteStudent = async (id) => {
+      let response = confirm("Do you really want to delete ?");
+      if (response)
+        try {
+          isLoading.value = true;
+          const response = await axios.delete(
+            "http://localhost:3000/students/" + id
+          );
+          fetchStudents();
+        } catch (error) {
+        } finally {
+          isLoading.value = false;
+        }
+    };
 
     function viewStudentDetails(id) {
       router.push(`/students/${id}`);
