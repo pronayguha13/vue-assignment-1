@@ -4,51 +4,57 @@
       <div class="closeIconContainer">
         <img :src="closeIcon" alt="close" @click="toggleModalStatus" />
       </div>
-      <label for="fieldName"> Choose Field Name </label>
-      <select name="fieldName" id="fieldName" v-model="selectedFieldName">
-        <option value="name">Name</option>
-        <option value="gender">Gender</option>
-        <option value="info">Info</option>
-      </select>
-      <div class="inputFieldContainer" v-if="selectedFieldName.length">
-        <!-- name input field -->
-        <div class="inputField" v-if="selectedFieldName === 'name'">
-          <label for="name">Enter new name</label>
-          <input type="text" v-model="editedName" @change="changeName" />
-        </div>
-        <!-- gender input field -->
-        <div class="inputField" v-else-if="selectedFieldName === 'gender'">
-          <label for="gender">Select Gender</label>
-          <select name="gender" id="gender" v-model="editedGender">
-            <option value="female">Female</option>
-            <option value="male">Male</option>
-            <option value="other">Other</option>
+      <div class="modal-content">
+        <div class="field-selection-section">
+          <label for="fieldName"> Choose Field Name </label>
+          <select name="fieldName" id="fieldName" v-model="selectedFieldName">
+            <option value="name">Name</option>
+            <option value="gender">Gender</option>
+            <option value="info">Info</option>
           </select>
         </div>
-        <!-- info input field -->
-        <div class="inputField" v-else-if="selectedFieldName === 'info'">
-          <textarea
-            name="info"
-            id="info"
-            cols="30"
-            rows="10"
-            v-model="editedInfo"
-            @change="changeInfo"
-          ></textarea>
-        </div>
-        <div>
-          <button
-            class="controller-button cancel-button"
-            @click="toggleModalStatus"
-          >
-            Cancel
-          </button>
-          <button
-            class="controller-button confirm-button"
-            @click="confirmChangeHandler"
-          >
-            Confirm
-          </button>
+
+        <div class="inputFieldContainer" v-if="selectedFieldName.length">
+          <!-- name input field -->
+          <div class="inputField" v-if="selectedFieldName === 'name'">
+            <label for="name">Enter new name</label>
+            <input type="text" v-model="editedName" @change="changeName" />
+          </div>
+          <!-- gender input field -->
+          <div class="inputField" v-else-if="selectedFieldName === 'gender'">
+            <label for="gender">Select Gender</label>
+            <select name="gender" id="gender" v-model="editedGender">
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <!-- info input field -->
+          <div class="inputField" v-else-if="selectedFieldName === 'info'">
+            <textarea
+              name="info"
+              id="info"
+              cols="30"
+              rows="10"
+              v-model="editedInfo"
+              @change="changeInfo"
+              placeholder="Enter the student details..."
+            ></textarea>
+          </div>
+          <div class="button-section">
+            <button
+              class="controller-button cancel-button"
+              @click="toggleModalStatus"
+            >
+              Cancel
+            </button>
+            <button
+              class="controller-button confirm-button"
+              @click="confirmChangeHandler"
+            >
+              Confirm
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -172,22 +178,54 @@ export default {
   background-color: white;
   color: #000;
   font-size: 20px;
-  height: 100%;
+  height: 50%;
+  width: 50%;
+  margin: 25% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
 }
 
 .closeIconContainer {
+  position: relative;
+  top: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  width: 100%;
 }
 .closeIconContainer img {
   cursor: pointer;
 }
+
+.modal-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.field-selection-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.field-selection-section label {
+  text-align: left;
+  margin-bottom: 8px;
+}
+
 .inputFieldContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .inputField {
@@ -195,12 +233,39 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+}
+.inputField label {
+  text-align: left;
+  margin-bottom: 8px;
+}
+.inputField textarea {
+  resize: none;
+}
+.inputField input,
+select {
+  font-size: 16px;
+  height: 24px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.inputField input,
+select,
+textarea:focus {
+  outline: none;
+}
+
+.button-section {
+  margin-top: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .controller-button {
   padding: 10px;
-  width: 64px;
+  width: 45%;
+  padding: 12px;
   color: #fff;
   border: 0;
   margin-top: 4px;
@@ -208,6 +273,8 @@ export default {
   margin-right: 8px;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: 550;
+  font-size: 18px;
 }
 
 .cancel-button {

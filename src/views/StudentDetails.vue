@@ -143,7 +143,7 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
-  margin: 30% auto;
+  margin: 25% auto;
   background-color: #fffdfd;
   width: 80%;
   padding: 24px 0;

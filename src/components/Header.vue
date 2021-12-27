@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    
     <button class="controller-button delete-button" @click="deleteData">
       Delete
     </button>
