@@ -24,15 +24,28 @@
           <textarea
             name="info"
             id="info"
-            cols="30"
-            rows="10"
+            cols="26"
+            rows="5"
             v-model="studentInfo"
+            placeholder="Enter student details..."
           ></textarea>
         </div>
       </div>
       <div id="button-section">
-        <button @click="cancel" :disabled="isLoading">Cancel</button>
-        <button @click="createStudent" :disabled="isLoading">Save</button>
+        <button
+          @click="cancel"
+          :disabled="isLoading"
+          class="controller-button cancel-button"
+        >
+          Cancel
+        </button>
+        <button
+          @click="createStudent"
+          :disabled="isLoading"
+          class="controller-button save-button"
+        >
+          Save
+        </button>
       </div>
     </div>
   </div>
@@ -137,18 +150,18 @@ export default {
   margin: 25% auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-content: center;
   border-radius: 8px;
   padding-top: 4px;
 }
 
 #header-section {
-  position: absolute;
-  top: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 #closeIcon {
@@ -156,5 +169,69 @@ export default {
   top: 0;
   right: 0;
   cursor: pointer;
+}
+
+#inputSection {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin-bottom: 8px;
+}
+.input-field input,
+select {
+  outline: none;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.input-field input,
+select:active {
+  outline: none;
+  border-bottom: 2px solid #000;
+}
+.input-field textarea {
+  outline: none;
+  resize: none;
+  padding: 4px;
+}
+
+#button-section {
+  padding-bottom: 12px;
+  width: 50%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controller-button {
+  width: 45%;
+  padding: 8px 4px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: crimson;
+}
+
+.save-button {
+  background-color: #6a6ae6;
 }
 </style>
