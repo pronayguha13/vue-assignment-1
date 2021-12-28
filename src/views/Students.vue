@@ -27,6 +27,8 @@
 import { ref } from "vue";
 import axios from "axios";
 import { useRouter } from "vue-router";
+import { REQUEST_URL } from "@/config/UrlConfig";
+
 import FloatingButton from "@/components/FloatingButton";
 import AddModal from "@/components/AddModal";
 
@@ -46,7 +48,7 @@ export default {
     const fetchStudents = async () => {
       try {
         isLoading.value = true;
-        const response = await axios.get("http://localhost:3000/students");
+        const response = await axios.get(REQUEST_URL);
 
         students.value = response.data;
       } catch (error) {
@@ -63,9 +65,7 @@ export default {
       if (response)
         try {
           isLoading.value = true;
-          const response = await axios.delete(
-            "http://localhost:3000/students/" + id
-          );
+          const response = await axios.delete(`${REQUEST_URL}/${id}`);
           fetchStudents();
         } catch (error) {
         } finally {

@@ -55,6 +55,7 @@
 import { ref } from "vue";
 import closeIcon from "../assets/close-icon.svg";
 import { GenderConfig } from "../config/GenderConfig";
+import { REQUEST_URL } from "@/config/UrlConfig";
 import { capitalizeFirstLetter } from "../helper";
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
@@ -95,10 +96,7 @@ export default {
             Info: studentInfo.value,
           };
 
-          const response = await axios.post(
-            "http://localhost:3000/students",
-            newStudent
-          );
+          const response = await axios.post(REQUEST_URL, newStudent);
           emit("create");
         } catch (error) {
           console.log(

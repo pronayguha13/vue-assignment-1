@@ -37,6 +37,7 @@ import axios from "axios";
 import { ref, computed, watch } from "vue";
 import { useRouter } from "vue-router";
 import { GenderConfig } from "@/config/GenderConfig";
+import { REQUEST_URL } from "../config/UrlConfig";
 
 import Header from "@/components/Header";
 import EditModal from "@/components/EditModal";
@@ -57,9 +58,7 @@ export default {
     (async () => {
       try {
         isLoading.value = true;
-        const response = await axios.get(
-          "http://localhost:3000/students/" + id
-        );
+        const response = await axios.get(`${REQUEST_URL}/${id}`);
         const data = response.data;
         studentDetails.value = data;
       } catch (error) {
@@ -101,10 +100,7 @@ export default {
     const changeStudentData = async (newData) => {
       try {
         isLoading.value = true;
-        const response = await axios.put(
-          "http://localhost:3000/students/" + id,
-          newData
-        );
+        const response = await axios.put(`${REQUEST_URL}/${id}`, newData);
 
         studentDetails.value = response.data;
       } catch (error) {
@@ -118,9 +114,7 @@ export default {
     };
 
     const deleteStudentData = async (id) => {
-      const response = await axios.delete(
-        "http://localhost:3000/students/" + id
-      );
+      const response = await axios.delete(`${REQUEST_URL}/${id}`);
 
       router.push("/");
     };
