@@ -17,8 +17,8 @@
         </div>
       </div>
     </ol>
-    <FloatingButton @add="addStudentDetails" />
-    <AddModal v-if="isAddModalOpen" />
+    <FloatingButton @add="toggleAddModal" />
+    <AddModal v-if="isAddModalOpen" @toggle="toggleAddModal" @create="create" />
   </div>
   <div v-else-if="!students.length && !isLoading">No Student found....</div>
 </template>
@@ -73,9 +73,13 @@ export default {
         }
     };
 
-    const addStudentDetails = () => {
-      console.log("Add button clicked....");
-      isAddModalOpen.value = true;
+    const toggleAddModal = () => {
+      isAddModalOpen.value = !isAddModalOpen.value;
+    };
+
+    const create = () => {
+      toggleAddModal();
+      fetchStudents();
     };
 
     function viewStudentDetails(id) {
@@ -88,7 +92,8 @@ export default {
       isAddModalOpen,
       deleteStudent,
       viewStudentDetails,
-      addStudentDetails,
+      toggleAddModal,
+      create,
     };
   },
 };

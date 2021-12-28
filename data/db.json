@@ -1,28 +1,6 @@
 {
   "students": [
     {
-      "id": "2",
-      "Name": "Yui Rio",
-      "Gender": "0",
-      "Class": "11",
-      "Seat": "14",
-      "Club": "1",
-      "Persona": "5",
-      "Crush": "0",
-      "BreastSize": "0.5",
-      "Strength": "0",
-      "Hairstyle": "2",
-      "Color": "Red",
-      "Eyes": "Red",
-      "EyeType": "Default",
-      "Stockings": "Red",
-      "Accessory": "0",
-      "ScheduleTime": "7_7_8_13_13.375_15.5_16_17.25_99_99",
-      "ScheduleDestination": "Spawn_Locker_Hangout_Seat_LunchSpot_Seat_Clean_Club_Locker_Exit",
-      "ScheduleAction": "Stand_Stand_Socialize_Sit_Socialize_Sit_Clean_SocialSit_Shoes_Stand",
-      "Info": ""
-    },
-    {
       "id": "3",
       "Name": "Pronay",
       "Gender": "1",
@@ -42,28 +20,6 @@
       "ScheduleTime": "7_7_8_13_13.375_15.5_16_17.25_99_99",
       "ScheduleDestination": "Spawn_Locker_Hangout_Seat_LunchSpot_Seat_Clean_Club_Locker_Exit",
       "ScheduleAction": "Stand_Stand_Socialize_Sit_Socialize_Sit_Clean_SocialSit_Shoes_Stand",
-      "Info": ""
-    },
-    {
-      "id": "10",
-      "Name": "Hayato Haruki",
-      "Gender": "1",
-      "Class": "21",
-      "Seat": "12",
-      "Club": "0",
-      "Persona": "6",
-      "Crush": "0",
-      "BreastSize": "0",
-      "Strength": "0",
-      "Hairstyle": "4",
-      "Color": "Green",
-      "Eyes": "Green",
-      "EyeType": "Default",
-      "Stockings": "None",
-      "Accessory": "0",
-      "ScheduleTime": "7_7_8_13.0002_13.375_15.5002_16_16.5_99",
-      "ScheduleDestination": "Spawn_Locker_Hangout_Seat_LunchSpot_Seat_Clean_Locker_Exit",
-      "ScheduleAction": "Stand_Stand_Socialize_Sit_Socialize_Sit_Clean_Shoes_Stand",
       "Info": ""
     },
     {
@@ -2045,6 +2001,30 @@
       "ScheduleDestination": "Nothing",
       "ScheduleAction": "Nothing",
       "Info": "Trying to look up my information? Don't bother. There is nothing that you need to know about me. You're a client, and I'm a provider. That's all we need to know about each other."
+    },
+    {
+      "id": "72fce4f9-4b2a-4bfa-b1cc-c74523216ffc",
+      "Name": "Pronay guha",
+      "Gender": "1",
+      "Info": "njksdnk"
+    },
+    {
+      "id": "2bd5945a-935d-4e72-aa32-f707fe571c60",
+      "Name": "Pronay guha",
+      "Gender": "1",
+      "Info": "njksdnk"
+    },
+    {
+      "id": "a6d40109-d4a5-4a09-854f-bf7be969809e",
+      "Name": "Pronay",
+      "Gender": "1",
+      "Info": "this is the info..."
+    },
+    {
+      "id": "e179aa54-586c-47ec-a972-13e204b9b370",
+      "Name": "Pronay",
+      "Gender": "1",
+      "Info": "this is the second test"
     }
   ]
 }

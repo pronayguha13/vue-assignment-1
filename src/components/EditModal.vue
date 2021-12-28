@@ -72,6 +72,10 @@ export default {
   props: ["studentData"],
   setup(props, { emit }) {
     const selectedFieldName = ref("name");
+    console.log(
+      "🚀 ~ file: EditModal.vue ~ line 75 ~ setup ~ selectedFieldName",
+      selectedFieldName
+    );
     const editedName = ref(props.studentData.Name);
     const editedGender = ref(
       GenderConfig[props.studentData.Gender].toLowerCase()
